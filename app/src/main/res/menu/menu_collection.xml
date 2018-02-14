@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.piotrzarczynski.fishbook.CaughtCardView.CaughtView">
+    <item
+        android:id="@+id/deleteCaughtFish"
+        android:icon="@android:drawable/ic_delete"
+        android:title="Delete"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_settings"
+        android:checkable="false"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:orderInCategory="100"
+        android:title="@string/btnSettings"
+        android:visible="false"
+        app:showAsAction="never|ifRoom" />
+    <item
+        android:id="@+id/addCaughtFish"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Add fish"
+        app:showAsAction="always" />
+</menu>

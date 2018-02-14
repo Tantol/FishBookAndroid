@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_fish"
+    tools:context="com.example.piotrzarczynski.fishbook.CaughtAddForm">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:text="Wybierz rybe z listy"
+                android:textColor="@color/txtColor" />
+
+            <Spinner
+                android:id="@+id/spAddCaughtFishId"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:textColor="@color/txtColor" />
+
+            <EditText
+                android:id="@+id/addCaughtWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/txtAddCaughtWeight"
+                android:inputType="number"
+                android:textColor="@color/txtColor" />
+
+            <EditText
+                android:id="@+id/addCaughtLength"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/txtAddCaughtLength"
+                android:inputType="number"
+                android:textColor="@color/txtColor" />
+
+            <EditText
+                android:id="@+id/addCaughtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/txtAddCaughtDescription"
+                android:inputType="textPersonName"
+                android:textColor="@color/txtColor" />
+
+            <ImageView
+                android:id="@+id/addCaughtImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/ivAddCaughtImg"
+                android:visibility="invisible"
+                app:srcCompat="@android:drawable/btn_star" />
+
+            <Button
+                android:id="@+id/addCaughtImgTriger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="btnFotoTriger"
+                android:text="@string/btnAddCaughtFish"
+                android:textColor="@color/txtColor" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabAddTriger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:backgroundTint="@android:color/holo_green_dark"
+                app:srcCompat="@android:drawable/ic_menu_upload" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

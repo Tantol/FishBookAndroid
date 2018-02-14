@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="16dp"
+        app:cardCornerRadius="8dp">
+
+
+        <RelativeLayout
+            android:id="@+id/colectedFishView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cardvievName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textColor="@color/txtColor" />
+
+            <ImageView
+                android:id="@+id/cardvievFoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardvievName"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/cardvievOpis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardvievFoto"
+                android:layout_centerInParent="true"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/txtColor"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

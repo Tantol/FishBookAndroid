@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_custom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    android:background="#FF0008FF"
+    >
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:padding="25sp"
+        android:text="Napewno chcesz usunąć zaznaczone ryby z kolekcji?"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/deleteNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/deleteYes"
+        android:layout_alignBottom="@+id/deleteYes"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="54dp"
+        android:textColor="#ffffff"
+        android:background="#FF0008FF"
+        android:text="Nie" />
+
+    <Button
+        android:id="@+id/deleteYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv"
+        android:layout_below="@+id/tv"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="34dp"
+        android:textColor="#ffffff"
+        android:background="#FF0008FF"
+        android:text="Tak" />
+</RelativeLayout>
